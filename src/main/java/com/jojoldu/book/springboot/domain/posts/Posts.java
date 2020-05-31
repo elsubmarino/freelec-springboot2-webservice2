@@ -8,11 +8,12 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.time.LocalDateTime;
 
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends com.jojoldu.book.springboot.domain.posts.BaseTimeEntity {
 
     @Id
     @GeneratedValue
